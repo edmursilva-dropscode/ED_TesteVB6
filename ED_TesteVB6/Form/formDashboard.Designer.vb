@@ -26,10 +26,12 @@ Partial Class formDashboard
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.ButtonProdutos = New System.Windows.Forms.Button()
+        Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -41,6 +43,7 @@ Partial Class formDashboard
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.ButtonProdutos)
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -80,6 +83,16 @@ Partial Class formDashboard
         Me.Panel2.Size = New System.Drawing.Size(1129, 100)
         Me.Panel2.TabIndex = 0
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(58, 30)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(807, 28)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "ed - Criamos softwares. Impulsionamos pessoas/negócios/o mundo"
+        '
         'PictureBox2
         '
         Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -101,16 +114,6 @@ Partial Class formDashboard
         Me.Panel3.Size = New System.Drawing.Size(1129, 64)
         Me.Panel3.TabIndex = 0
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(58, 30)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(807, 28)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "ed - Criamos softwares. Impulsionamos pessoas/negócios/o mundo"
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -120,12 +123,32 @@ Partial Class formDashboard
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Copyright © 2022.All Rights Reserved ED-TesteVB6 Softwares"
         '
+        'ButtonProdutos
+        '
+        Me.ButtonProdutos.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ButtonProdutos.Location = New System.Drawing.Point(32, 172)
+        Me.ButtonProdutos.Name = "ButtonProdutos"
+        Me.ButtonProdutos.Size = New System.Drawing.Size(176, 46)
+        Me.ButtonProdutos.TabIndex = 1
+        Me.ButtonProdutos.Text = "Produtos"
+        Me.ButtonProdutos.UseVisualStyleBackColor = True
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel5.Location = New System.Drawing.Point(237, 100)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(1129, 556)
+        Me.Panel5.TabIndex = 0
+        '
         'formDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1366, 720)
+        Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -155,4 +178,6 @@ Partial Class formDashboard
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents ButtonProdutos As Button
+    Friend WithEvents Panel5 As Panel
 End Class
