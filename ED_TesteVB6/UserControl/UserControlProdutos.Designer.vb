@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class UserControlProdutos
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,17 +20,12 @@ Partial Class UserControlProdutos
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.TabControlProdutos = New System.Windows.Forms.TabControl()
         Me.TabPageListarProdutos = New System.Windows.Forms.TabPage()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBoxProduto = New System.Windows.Forms.TextBox()
         Me.DataGridViewProdutos = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.TabControlProdutos.SuspendLayout()
         Me.TabPageListarProdutos.SuspendLayout()
         CType(Me.DataGridViewProdutos, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,7 +45,6 @@ Partial Class UserControlProdutos
         'TabPageListarProdutos
         '
         Me.TabPageListarProdutos.Controls.Add(Me.DataGridViewProdutos)
-        Me.TabPageListarProdutos.Controls.Add(Me.TextBoxProduto)
         Me.TabPageListarProdutos.Controls.Add(Me.Label2)
         Me.TabPageListarProdutos.Location = New System.Drawing.Point(4, 4)
         Me.TabPageListarProdutos.Name = "TabPageListarProdutos"
@@ -60,55 +54,27 @@ Partial Class UserControlProdutos
         Me.TabPageListarProdutos.Text = "Listar de Produtos"
         Me.TabPageListarProdutos.UseVisualStyleBackColor = True
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(40, 23)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(72, 19)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Produto:"
-        '
-        'TextBoxProduto
-        '
-        Me.TextBoxProduto.Location = New System.Drawing.Point(40, 55)
-        Me.TextBoxProduto.Name = "TextBoxProduto"
-        Me.TextBoxProduto.Size = New System.Drawing.Size(402, 23)
-        Me.TextBoxProduto.TabIndex = 2
-        '
         'DataGridViewProdutos
         '
         Me.DataGridViewProdutos.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.DataGridViewProdutos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridViewProdutos.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridViewProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewProdutos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4})
-        Me.DataGridViewProdutos.Location = New System.Drawing.Point(40, 97)
+        Me.DataGridViewProdutos.Location = New System.Drawing.Point(40, 45)
         Me.DataGridViewProdutos.Name = "DataGridViewProdutos"
         Me.DataGridViewProdutos.RowTemplate.Height = 25
-        Me.DataGridViewProdutos.Size = New System.Drawing.Size(947, 251)
+        Me.DataGridViewProdutos.Size = New System.Drawing.Size(947, 303)
         Me.DataGridViewProdutos.TabIndex = 3
         '
-        'Column1
+        'Label2
         '
-        Me.Column1.HeaderText = "CodProduto"
-        Me.Column1.Name = "Column1"
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "NomeProduto"
-        Me.Column2.Name = "Column2"
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Importancia"
-        Me.Column3.Name = "Column3"
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "QtdVendida"
-        Me.Column4.Name = "Column4"
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Location = New System.Drawing.Point(40, 15)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(72, 19)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Produto:"
         '
         'UserControlProdutos
         '
@@ -132,8 +98,4 @@ Partial Class UserControlProdutos
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBoxProduto As TextBox
     Friend WithEvents DataGridViewProdutos As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
 End Class
