@@ -55,6 +55,8 @@ Partial Class formDashboard
         '
         'ButtonProdutos
         '
+        Me.ButtonProdutos.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.ButtonProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonProdutos.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ButtonProdutos.Location = New System.Drawing.Point(32, 172)
         Me.ButtonProdutos.Name = "ButtonProdutos"
