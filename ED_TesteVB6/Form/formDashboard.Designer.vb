@@ -23,6 +23,7 @@ Partial Class formDashboard
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ButtonProdutos = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -30,14 +31,15 @@ Partial Class formDashboard
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ButtonProdutos = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.UserControlProdutos1 = New ED_TesteVB6.UserControlProdutos()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -50,6 +52,16 @@ Partial Class formDashboard
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(237, 720)
         Me.Panel1.TabIndex = 0
+        '
+        'ButtonProdutos
+        '
+        Me.ButtonProdutos.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ButtonProdutos.Location = New System.Drawing.Point(32, 172)
+        Me.ButtonProdutos.Name = "ButtonProdutos"
+        Me.ButtonProdutos.Size = New System.Drawing.Size(176, 46)
+        Me.ButtonProdutos.TabIndex = 1
+        Me.ButtonProdutos.Text = "Produtos"
+        Me.ButtonProdutos.UseVisualStyleBackColor = True
         '
         'Panel4
         '
@@ -123,24 +135,26 @@ Partial Class formDashboard
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Copyright © 2022.All Rights Reserved ED-TesteVB6 Softwares"
         '
-        'ButtonProdutos
-        '
-        Me.ButtonProdutos.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ButtonProdutos.Location = New System.Drawing.Point(32, 172)
-        Me.ButtonProdutos.Name = "ButtonProdutos"
-        Me.ButtonProdutos.Size = New System.Drawing.Size(176, 46)
-        Me.ButtonProdutos.TabIndex = 1
-        Me.ButtonProdutos.Text = "Produtos"
-        Me.ButtonProdutos.UseVisualStyleBackColor = True
-        '
         'Panel5
         '
-        Me.Panel5.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel5.BackColor = System.Drawing.Color.White
+        Me.Panel5.Controls.Add(Me.UserControlProdutos1)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel5.Location = New System.Drawing.Point(237, 100)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1129, 556)
         Me.Panel5.TabIndex = 0
+        '
+        'UserControlProdutos1
+        '
+        Me.UserControlProdutos1.BackColor = System.Drawing.Color.White
+        Me.UserControlProdutos1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.UserControlProdutos1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.UserControlProdutos1.Location = New System.Drawing.Point(0, 0)
+        Me.UserControlProdutos1.Name = "UserControlProdutos1"
+        Me.UserControlProdutos1.Size = New System.Drawing.Size(1129, 556)
+        Me.UserControlProdutos1.TabIndex = 0
+        Me.UserControlProdutos1.Visible = False
         '
         'formDashboard
         '
@@ -166,6 +180,7 @@ Partial Class formDashboard
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -180,4 +195,5 @@ Partial Class formDashboard
     Friend WithEvents Label2 As Label
     Friend WithEvents ButtonProdutos As Button
     Friend WithEvents Panel5 As Panel
+    Friend WithEvents UserControlProdutos1 As UserControlProdutos
 End Class
