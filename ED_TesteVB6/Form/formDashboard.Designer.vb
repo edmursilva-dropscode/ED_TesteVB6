@@ -55,9 +55,12 @@ Partial Class formDashboard
         '
         'ButtonProdutos
         '
+        Me.ButtonProdutos.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ButtonProdutos.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.ButtonProdutos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.ButtonProdutos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ButtonProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonProdutos.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ButtonProdutos.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ButtonProdutos.Location = New System.Drawing.Point(32, 172)
         Me.ButtonProdutos.Name = "ButtonProdutos"
         Me.ButtonProdutos.Size = New System.Drawing.Size(176, 46)
