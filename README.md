@@ -10,7 +10,7 @@
 </h1>
 
 <br>
-<h1 align="center">ED – Listagem de Produtos Vendidos</h1>
+<h1 align="center">ED – Listagem de Produtos Vendidos - Desktop </h1>
 <br>
 <h2 align="center">Tecnologias escolhidas</h2>
 <p align="justify">As linguagem aplicadas para o desenvolvimento foi baseada na agilidade do tempo para fazer este projeto. Usamos para código
